@@ -97,7 +97,8 @@ class Room(core_models.TimeStampedModel):
         all_ratings = 0
         for review in all_reviews:
             all_ratings += review.rating_average()
+        # Temporary for failover
+        if not len(all_reviews):
+            return "No reviews"
+        # Temporary for failover
         return all_ratings / len(all_reviews)
-
-        # if not len(all_reviews):
-        #     return "No reviews"
