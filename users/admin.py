@@ -39,3 +39,14 @@ class CustomUserAdmin(UserAdmin):
         "is_staff",
         "is_superuser",
     )
+
+
+# from rooms import models as room_models
+
+# class RoomInline(admin.TabularInline):
+#     model = room_models.Room
+
+# @admin.register(models.User)
+# class CustomUserAdmin(UserAdmin):
+#     """ Custom User Admin """
+#     inlines = (RoomInline,)
