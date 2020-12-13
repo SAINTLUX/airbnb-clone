@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import mark_safe
 
-# Django 3.1 mark_safe import location changed
+# Django 3.1 mark_safe import location changed.
 # from django.utils.safestring import mark_safe
 from . import models
 
