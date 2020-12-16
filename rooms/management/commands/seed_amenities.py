@@ -55,6 +55,7 @@ class Command(BaseCommand):
             "Toilet",
             "Towels",
             "TV",
+            "Comupter",
         ]
         for a in amenities:
             Amenity.objects.create(name=a)
