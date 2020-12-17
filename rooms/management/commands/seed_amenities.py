@@ -4,12 +4,15 @@ from rooms.models import Amenity
 
 class Command(BaseCommand):
 
-    help = "This command tells me that he loves me"
+    help = "This command creates amenities"
 
     # def add_arguments(self, parser):
     #     parser.add_argument(
     #         "Test"
     #     )
+
+    def add_arguments(self, parser):
+        parser.add_argument("--number", help="How many users do you want to create")
 
     def handle(self, *args, **options):
         amenities = [
